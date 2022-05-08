@@ -1,0 +1,10 @@
+{
+    "defaultCommandTimeout": 8000,
+
+    "env" : 
+    {
+        "baseUrl" : "https://www.saucedemo.com/"
+    }
+
+
+}

@@ -1,0 +1,22 @@
+{
+  "name": "qa_engineer_challlenge_solution",
+  "version": "1.0.0",
+  "description": "QA challenge solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hezee005"
+  },
+  "author": "Ibrahim Garuba",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.0",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
