@@ -6,6 +6,8 @@ describe ("Test login functionalities", function () {
 
         cy.visit("https://www.saucedemo.com/")
 
+        cy.log("Error")
+
     })
 
 
