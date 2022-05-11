@@ -1,25 +1,20 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+     Cypress.Commands.add('selectSingleProduct', (singleProducToAddtName) => { 
+        cy.get("div.inventory_item_name").each(function ($el, index, $list) {
+            if( $el.text().includes(singleProducToAddtName))
+            {
+                 cy.get("button.btn.btn_primary.btn_small.btn_inventory").eq(index).click()
+            }
+        
+         })     
+         })
+
+    Cypress.Commands.add('selectMultipleProducts', (MultipleProductsToAddtName) => { 
+            cy.get("div.inventory_item_name").each(function ($el, index, $list) {
+                if( $el.text().includes(MultipleProductsToAddtName))
+                {
+                     cy.get("button.btn.btn_primary.btn_small.btn_inventory").eq(index).click()
+                }
+            
+             })     
+             })

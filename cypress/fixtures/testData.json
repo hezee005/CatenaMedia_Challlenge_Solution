@@ -1,0 +1,33 @@
+{
+   "inventoryPageDirectory" : "/inventory.html",
+
+   "login": {
+        "validUser": "standard_user",
+        "lockOutUser": "locked_out_user",
+        "problemUser": "problem_user",
+        "glitchUser": "performance_glitch_user",
+        "InvalidUsername": "test_user1"
+    },
+
+      "validPassword": "secret_sauce",
+      "wrongPassword": "234huds uw$",
+      "loginErrorMessage": "Username and password do not match any user in this service",
+
+      "errorMessages": {
+        "emptyUsername" : "Epic sadface: Username is required",
+        "emptyPassword" : "Epic sadface: Password is required",
+        "lockedUser" : "Epic sadface: Sorry, this user has been locked out.",
+        "invalidCredential" : "Epic sadface: Username and password do not match any user in this service"
+      },
+
+      "allProductNames" : ["Sauce Labs Backpack","Sauce Labs Bolt T-Shirt","Sauce Labs Onesie","Sauce Labs Fleece Jacket","Sauce Labs Onesie","Sauce Labs Fleece Jacket"],
+      
+      "MultipleProductsToAddtName" : ["Sauce Labs Backpack","Sauce Labs Bolt T-Shirt","Sauce Labs Fleece Jacket"],
+
+      "singleProducToAddtName" : ["Sauce Labs Backpack"],
+
+
+      "totalProductsAvailable":6
+
+}
+

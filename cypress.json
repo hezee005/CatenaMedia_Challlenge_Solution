@@ -1,10 +1,14 @@
 {
+
+    "integrationFolder":"cypress/tests",
     "defaultCommandTimeout": 8000,
 
     "env" : 
     {
         "baseUrl" : "https://www.saucedemo.com/"
-    }
+    },
 
+    "chromeWebSecurity": false
 
 }
+
