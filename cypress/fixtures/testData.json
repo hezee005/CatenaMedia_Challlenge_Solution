@@ -1,0 +1,42 @@
+{
+   "login": {
+        "validUser": "standard_user",
+        "lockOutUser": "locked_out_user",
+        "problemUser": "problem_user",
+        "glitchUser": "performance_glitch_user",
+        "InvalidUsername": "test_user1"
+    },
+
+      "validPassword": "secret_sauce",
+      "wrongPassword": "234huds uw$",
+      "loginErrorMessage": "Username and password do not match any user in this service",
+
+      "errorMessages": {
+        "emptyUsername" : "Epic sadface: Username is required",
+        "emptyPassword" : "Epic sadface: Password is required",
+        "lockedUser" : "Epic sadface: Sorry, this user has been locked out.",
+        "invalidCredential" : "Epic sadface: Username and password do not match any user in this service",
+
+      "products" : {
+        "backpack":"Sauce Labs Backpack",  
+        "bolt_t_shirt":"Sauce Labs Bolt T-Shirt", 
+        "Onesie":"Sauce Labs Onesie", 
+        "fleece_jacket":"Sauce Labs Fleece Jacket",       
+        "bike_light":"Sauce Labs Onesie", 
+        "red_t_shirt":"Sauce Labs Fleece Jacket"
+      },
+
+      "multipleProducts":["Blackberry", "iphone X","Samsung Note"]
+
+
+        
+
+        
+
+      
+
+    }
+    
+
+}
+
