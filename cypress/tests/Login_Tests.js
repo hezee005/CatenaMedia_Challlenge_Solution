@@ -5,9 +5,7 @@ import Homepage from "../support/pageObjects/Homepage"
 const landingPage = new LandingPage()
 const homepage = new Homepage
 
-const inventoryPage = "/inventory.html"
-const emptyUsernameErrorMessage = 'Epic sadface: Username is required'
-const emptyPasswordErrorMessage = 'Epic sadface: Password is required'
+
 
 describe ("First Test", function(){
   
@@ -26,15 +24,16 @@ describe ("First Test", function(){
       landingPage.getUsernameInputField().type(this.data.login.validUser)
       landingPage.getPasswordInputField().type(this.data.validPassword);
       landingPage.getLoginButton().click()
-      cy.location("pathname").should('eq', inventoryPage)
+      cy.location("pathname").should('eq', this.data.inventoryPageDirectory)
       homepage.getHomepageLogo().should("be.visible")
+
     })
 
     it ("Successful Login Follow by LogOut", function() {
       landingPage.getUsernameInputField().type(this.data.login.problemUser)
       landingPage.getPasswordInputField().type(this.data.validPassword);
       landingPage.getLoginButton().click()
-      cy.location("pathname").should('equal', inventoryPage)
+      cy.location("pathname").should('equal', this.data.inventoryPageDirectory)
       homepage.getBurgerMenu().click()
       homepage.getLogoutButton().click()
     })
@@ -45,7 +44,7 @@ describe ("First Test", function(){
       landingPage.getLoginButton().click()
       landingPage.getinvalidCredentialErrorMessage().should("be.visible")
       landingPage.getinvalidCredentialErrorMessage().should("have.text",this.data.errorMessages.invalidCredential)
-      cy.location("pathname").should('not.eq', inventoryPage)
+      cy.location("pathname").should('not.eq', this.data.inventoryPageDirectory)
     })
 
     

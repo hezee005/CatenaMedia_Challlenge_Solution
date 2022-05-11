@@ -1,4 +1,6 @@
 {
+   "inventoryPageDirectory" : "/inventory.html",
+
    "login": {
         "validUser": "standard_user",
         "lockOutUser": "locked_out_user",
@@ -15,28 +17,17 @@
         "emptyUsername" : "Epic sadface: Username is required",
         "emptyPassword" : "Epic sadface: Password is required",
         "lockedUser" : "Epic sadface: Sorry, this user has been locked out.",
-        "invalidCredential" : "Epic sadface: Username and password do not match any user in this service",
-
-      "products" : {
-        "backpack":"Sauce Labs Backpack",  
-        "bolt_t_shirt":"Sauce Labs Bolt T-Shirt", 
-        "Onesie":"Sauce Labs Onesie", 
-        "fleece_jacket":"Sauce Labs Fleece Jacket",       
-        "bike_light":"Sauce Labs Onesie", 
-        "red_t_shirt":"Sauce Labs Fleece Jacket"
+        "invalidCredential" : "Epic sadface: Username and password do not match any user in this service"
       },
 
-      "multipleProducts":["Blackberry", "iphone X","Samsung Note"]
-
-
-        
-
-        
-
+      "allProductNames" : ["Sauce Labs Backpack","Sauce Labs Bolt T-Shirt","Sauce Labs Onesie","Sauce Labs Fleece Jacket","Sauce Labs Onesie","Sauce Labs Fleece Jacket"],
       
+      "MultipleProductsToAddtName" : ["Sauce Labs Backpack","Sauce Labs Bolt T-Shirt","Sauce Labs Fleece Jacket"],
 
-    }
-    
+      "singleProducToAddtName" : ["Sauce Labs Backpack"],
+
+
+      "totalProductsAvailable":6
 
 }
 
