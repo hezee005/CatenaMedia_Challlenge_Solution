@@ -1,0 +1,7 @@
+
+cypress/screenshots/
+cypress/videos/
+playwright/test-results/
+playwright/playwright-report/
+node_modules/
+.env
